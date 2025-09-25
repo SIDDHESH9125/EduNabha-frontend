@@ -13,7 +13,7 @@ const lessonsGrid = document.querySelector('.lessons-grid');
 const resourcesGrid = document.querySelector('.resources-grid');
 
 // API URL
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://edunabha-backend-api.vercel.app/api';
 
 // Sample data - Will be fetched from API in production
 let lessons = [
