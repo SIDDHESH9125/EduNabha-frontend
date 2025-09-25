@@ -1,0 +1,228 @@
+/* Progress Visualization Styles for EduNabha */
+
+/* Dashboard Modal */
+#progress-dashboard-modal .dashboard-content {
+    max-width: 800px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#progress-dashboard-modal h2 {
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+#progress-dashboard-modal h3 {
+    color: #5a5a5a;
+    margin: 20px 0 15px;
+    font-size: 22px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+/* Dashboard Summary */
+.dashboard-summary {
+    margin-bottom: 30px;
+}
+
+.progress-card {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.level-progress {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    height: 12px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #ffcc00;
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Badges Section */
+.dashboard-badges {
+    margin-bottom: 30px;
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.badge-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.badge-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.badge-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.badge-name {
+    font-size: 14px;
+    color: #4a4a4a;
+    display: block;
+}
+
+/* Achievements Section */
+.dashboard-achievements {
+    margin-bottom: 30px;
+}
+
+.achievements-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.achievement-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.achievement-section h4 {
+    color: #5a5a5a;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.achievement-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.achievement-section li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Learning Path */
+.learning-path {
+    margin-bottom: 20px;
+}
+
+.path-visualization {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.path-progress {
+    margin-bottom: 20px;
+}
+
+.path-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #5a5a5a;
+}
+
+.next-steps h4 {
+    color: #5a5a5a;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.next-steps ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.recommended-lesson {
+    color: #4285f4;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.recommended-lesson:hover {
+    color: #2a56c6;
+    text-decoration: underline;
+}
+
+.empty-message {
+    color: #888;
+    font-style: italic;
+}
+
+/* Sidebar Button */
+#progress-dashboard-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 15px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    color: #4a4a4a;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#progress-dashboard-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#progress-dashboard-btn i {
+    margin-right: 10px;
+    color: #6e8efb;
+}

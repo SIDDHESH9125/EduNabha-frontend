@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNabha - Digital Learning for Rural Schools</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gamification.css">
+    <link rel="stylesheet" href="css/progress-visualization.css">
+    <link rel="stylesheet" href="css/ai-doubt-solver.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4285f4">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <img src="images/logo.svg" alt="EduNabha Logo">
+                <h1>EduNabha</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="lessons">Lessons</a></li>
+                    <li><a href="#" data-page="resources">Resources</a></li>
+                    <li><a href="#" data-page="dashboard">Teacher Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-section">
+                <button id="login-btn" class="btn">Login</button>
+                <button id="register-btn" class="btn btn-primary">Register</button>
+            </div>
+            <div class="language-selector">
+                <img src="images/language-icon.svg" alt="Language">
+                <select id="language-select">
+                    <option value="english">English</option>
+                    <option value="punjabi">ਪੰਜਾਬੀ</option>
+                    <option value="hindi">हिंदी</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <h2>Digital Learning for Rural Schools</h2>
+                    <p>Access quality education anytime, anywhere - even without internet!</p>
+                    <button class="cta-button">Start Learning</button>
+                </div>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <img src="images/offline-icon.svg" alt="Offline Learning">
+                        <h3>Offline Learning</h3>
+                        <p>Access all lessons without internet connection</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/language-icon.svg" alt="Local Languages">
+                        <h3>Local Languages</h3>
+                        <p>Learn in Punjabi, Hindi, or English</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/interactive-icon.svg" alt="Interactive Content">
+                        <h3>Interactive Content</h3>
+                        <p>Engage with interactive lessons and quizzes</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lessons Page -->
+            <section id="lessons" class="page">
+                <h2>Available Lessons</h2>
+                <div class="lesson-filters">
+                    <select id="subject-filter">
+                        <option value="all">All Subjects</option>
+                        <option value="computer">Computer Skills</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="language">Language</option>
+                    </select>
+                    <select id="grade-filter">
+                        <option value="all">All Grades</option>
+                        <option value="1-5">Grades 1-5</option>
+                        <option value="6-8">Grades 6-8</option>
+                        <option value="9-12">Grades 9-12</option>
+                    </select>
+                </div>
+                <div class="lessons-grid">
+                    <!-- Lesson cards will be dynamically generated here -->
+                </div>
+            </section>
+
+            <!-- Resources Page -->
+            <section id="resources" class="page">
+                <h2>Digital Literacy Resources</h2>
+                <div class="resources-grid">
+                    <!-- Resource cards will be dynamically generated here -->
+                </div>
+            </section>
+
+            <!-- Dashboard Page -->
+            <section id="dashboard" class="page">
+                <h2>Teacher Dashboard</h2>
+                <div class="login-required">
+                    <p>Please log in to access the teacher dashboard</p>
+                    <form id="login-form">
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Log In</button>
+                    </form>
+                </div>
+                <div class="dashboard-content hidden">
+                    <!-- Dashboard content will be shown after login -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 EduNabha - Digital Learning for Rural Schools</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Help</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/offline.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/gamification.js"></script>
+    <script src="js/progress-visualization.js"></script>
+    <script src="js/ai-doubt-solver.js"></script>
+    <script>
+        // Register Service Workerservice worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>

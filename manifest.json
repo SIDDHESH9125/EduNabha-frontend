@@ -1,0 +1,41 @@
+{
+  "name": "EduNabha",
+  "short_name": "EduNabha",
+  "description": "Digital Learning for Rural Schools in Nabha",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4285f4",
+  "icons": [
+    {
+      "src": "images/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "images/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "orientation": "portrait",
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "categories": ["education", "learning"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Lessons",
+      "url": "/index.html#lessons",
+      "description": "View available lessons"
+    },
+    {
+      "name": "Resources",
+      "url": "/index.html#resources",
+      "description": "Access digital literacy resources"
+    }
+  ],
+  "offline_enabled": true
+}
